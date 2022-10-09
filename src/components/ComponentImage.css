@@ -1,0 +1,22 @@
+.ComponentImage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 30rem;
+}
+
+.ComponentImage .container {
+    height: 100%;
+    width: 100%;
+}
+
+.ComponentImage .container img {
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width: 500px) {
+    .ComponentImage {
+        grid-template-columns: 1fr;
+        height: max-content;
+    }
+}

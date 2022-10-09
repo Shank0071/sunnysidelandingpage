@@ -1,0 +1,51 @@
+.Testimonials {
+    padding: 5rem;
+    background-color: antiquewhite;
+}
+
+.Testimonials h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.Testimonials .container {
+    display: flex;
+    gap: 3rem;
+}
+
+.Testimonials .container .container1,
+.Testimonials .container .container2,
+.Testimonials .container .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Testimonials .container .container1 > div,
+.Testimonials .container .container2 > div,
+.Testimonials .container .container3 > div {
+    text-align: center;
+}
+
+
+.Testimonials .container p {
+    text-align: center;
+}
+
+.Testimonials img {
+    border-radius: 50%;
+    height: 5rem;
+}
+
+.Testimonials small {
+    color: rgba(0,0,0,0.4)
+}
+
+@media(max-width: 500px) {
+    .Testimonials .container {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+    }
+}

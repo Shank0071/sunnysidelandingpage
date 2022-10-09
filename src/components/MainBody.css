@@ -1,0 +1,105 @@
+.MainBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.MainBody .container {
+    background-color: aqua;
+    height: 30rem;
+    width: 100%;
+}
+
+.MainBody .container1 {
+    height: 30rem;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: antiquewhite;
+}
+
+.MainBody .container1 p {
+    color: rgba(0,0,0,0.5)
+}
+
+.MainBody .container2 {
+    background-position: center center;
+    background-size: cover;
+}
+
+.MainBody .container3 {
+    background-position: center center;
+    background-size: cover;
+}
+
+.MainBody .container4 {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: antiquewhite;
+}
+
+.MainBody .container4 p {
+    color: rgba(0,0,0,0.5)
+}
+
+.MainBody .container5 {
+    height: 30rem;
+    width: 100%;
+    position: relative;
+    padding: 10rem;
+    background-position: center center;
+}
+
+.MainBody .container5 > div {
+    position: absolute;
+    bottom: 3rem;
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.MainBody .container6 {
+    height: 30rem;
+    width: 100%;
+    position: relative;
+    padding: 10rem;
+    background-position: center center;
+}
+
+.MainBody .container6 > div {
+    position: absolute;
+    bottom: 4rem;
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.MainBody .container5 > div h1,
+.MainBody .container6 > div h1 {
+    margin: 0 auto;
+}
+
+@media(max-width: 500px) {
+    .MainBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MainBody .container1,
+    .MainBody .container4 {
+        text-align: center;
+    }
+
+    .MainBody .container > div {
+        right: 5rem;
+    }
+}

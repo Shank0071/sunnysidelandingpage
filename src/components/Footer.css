@@ -1,0 +1,30 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    background-color: aquamarine;
+    color: darkgreen;
+}
+
+.Footer ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.Footer ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.Footer .icon {
+    display: flex;
+    gap: 2rem
+}
+
+.Footer img:hover {
+    filter: brightness(1000%);
+    cursor: pointer;
+}
